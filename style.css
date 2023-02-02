@@ -1,6 +1,7 @@
 :root {
     --navy: #25135f;
     --skyBlue: #465bb8;
+    --gray: #aeaeae;
 }
 
 .text-bg-darkblue {
@@ -15,6 +16,10 @@
 .btn.text-bg-skyblue{
     background-color: var(--skyBlue);
     color: white;
+}
+.btn.text-bg-gray{
+    background-color: var(--gray);
+    color: black;
 }
 
 .bg-skyBlue{

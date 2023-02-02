@@ -18,15 +18,21 @@
                 <p class="fs-2 fw-bolder">Search for a city:</p>
                 <input id="citySearch" class="form-control border-dark border-2" type="text" name="search" id="searchInput">
                 <div class=" border-dark-subtle border-bottom pb-3 mt-2 d-grid gap-2">
-                    <button id="searchBtn" class="btn text-bg-skyblue" type="button" onclick="searchBtn()">Button</button>
+                    <button id="searchBtn" class="btn text-bg-skyblue" type="button" onclick="getForecast(document.getElementById('citySearch').value)">Search</button>
                 </div>
+                <div id="history" class="pb-3 mt-2 d-grid gap-2"></div>
             </div>
             <div class="col me-5">
                 <div class="row border border-dark-subtle border-2">
-                    <p id="cityName" class="fs-2 fw-bolder">City Name <img id="pic1" src="" alt=""></p>
-                    <p id="temp1">Temp:</p>
-                    <p id="wind1">Wind:</p>
-                    <p id="humidity1">Humidity:</p>
+                    <div class="col">
+                        <p id="cityName" class="fs-2 fw-bolder">City Name</p>
+                        <p id="temp1">Temp:</p>
+                        <p id="wind1">Wind:</p>
+                        <p id="humidity1">Humidity:</p>
+                    </div>
+                    <div class="col">
+                        <img id="pic1" src="/images/imageLoader.png" alt="" width="100" height="100">
+                    </div>
                 </div>
                 <div class="row">
                     <div class="col-12 mt-5 text-left">
@@ -36,7 +42,7 @@
                         <div class="card text-bg-darkblue">
                             <div class="card-body">
                               <h5 id="date2" class="card-title">Date</h5>
-                              <img id="pic2" src="" alt="">
+                              <img id="pic2" src="/images/imageLoader.png" alt="" width="50" height="50">
                               <p id="temp2" class="card-text">Temp:</p>
                               <p id="wind2" class="card-text">Wind:</p>
                               <p id="humidity2" class="card-text">Humidity:</p>
@@ -47,7 +53,7 @@
                         <div class="card text-bg-darkblue">
                             <div class="card-body">
                               <h5 id="date3" class="card-title">Date</h5>
-                              <img id="pic3" src="" alt="">
+                              <img id="pic3" src="/images/imageLoader.png" alt="" width="50" height="50">
                               <p id="temp3" class="card-text">Temp:</p>
                               <p id="wind3" class="card-text">Wind:</p>
                               <p id="humidity3" class="card-text">Humidity:</p>
@@ -58,7 +64,7 @@
                         <div class="card text-bg-darkblue">
                             <div class="card-body">
                               <h5 id="date4" class="card-title">Date</h5>
-                              <img id="pic4" src="" alt="">
+                              <img id="pic4" src="/images/imageLoader.png" alt="" width="50" height="50">
                               <p id="temp4" class="card-text">Temp:</p>
                               <p id="wind4" class="card-text">Wind:</p>
                               <p id="humidity4" class="card-text">Humidity:</p>
@@ -69,7 +75,7 @@
                         <div class="card text-bg-darkblue">
                             <div class="card-body">
                               <h5 id="date5" class="card-title">Date</h5>
-                              <img id="pic5" src="" alt="">
+                              <img id="pic5" src="/images/imageLoader.png" alt="" width="50" height="50">
                               <p id="temp5" class="card-text">Temp:</p>
                               <p id="wind5" class="card-text">Wind:</p>
                               <p id="humidity5" class="card-text">Humidity:</p>
@@ -80,7 +86,7 @@
                         <div class="card text-bg-darkblue">
                             <div class="card-body">
                               <h5 id="date6" class="card-title">Date</h5>
-                              <img id="pic6" src="" alt="">
+                              <img id="pic6" src="/images/imageLoader.png" alt="" width="50" height="50">
                               <p id="temp6" class="card-text">Temp:</p>
                               <p id="wind6" class="card-text">Wind:</p>
                               <p id="humidity6" class="card-text">Humidity:</p>
